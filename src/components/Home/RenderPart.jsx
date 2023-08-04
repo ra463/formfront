@@ -4,9 +4,10 @@ import { useDispatch, useSelector } from "react-redux";
 import Header from "../Header/Header";
 import { gerFormDataAction } from "../../redux/actions/createformaction";
 import "./RenderPart.scss";
+import PulseLoader from "react-spinners/PulseLoader";
 
 const RenderPart = () => {
-  const { formData } = useSelector((state) => state.getdata);
+  const { formData, loading } = useSelector((state) => state.getdata);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -16,6 +17,12 @@ const RenderPart = () => {
   return (
     <div>
       <Header />
+      {loading && (
+        <div className="no_data">
+          <PulseLoader size="22px" color="navy" />
+        </div>
+      )}
+      {formData.length === 0 && <h1 className="no_data">No Data Found</h1>}
       {formData &&
         formData.length > 0 &&
         formData.map((data, i) => (
@@ -75,9 +82,7 @@ const RenderPart = () => {
                   </div>
                 </div>
                 <div className="btn">
-                  <button className="active">
-                    Submit Quiz
-                  </button>
+                  <button className="active">Submit Quiz</button>
                 </div>
               </form>
             </div>
