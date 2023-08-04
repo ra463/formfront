@@ -24,7 +24,9 @@ const RenderPart = () => {
       ) : (
         <>
           {formData && formData.length === 0 && (
-            <h1 className="no_data">No Data Found</h1>
+            <div className="no_data">
+              <h1>No Data Found</h1>
+            </div>
           )}
           {formData &&
             formData.length > 0 &&
