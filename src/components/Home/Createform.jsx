@@ -42,7 +42,21 @@ const Createform = () => {
         rightOption
       )
     );
+
+    toast.success("Quiz Form Created Successfully");
+
+    setDescription("");
+    setCategory([{ option: "" }]);
+    setAnswer([{ option: "" }]);
+    setRightAnswer([{ option: "" }]);
+    setSelectedText([]);
+    setSentence("");
+    setPassage("");
+    setTitle("");
+    setOptions([{ option: "" }]);
+    setRightOption("");
   };
+
   useEffect(() => {
     if (error) {
       toast.error(error);
