@@ -1,0 +1,307 @@
+.create_form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1rem;
+
+    .first {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 85%;
+        p {
+            text-align: center;
+        }
+    }
+    .second {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 1rem;
+        width: 100%;
+        padding: 0 1rem;
+
+        form {
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            border-radius: 4px;
+            width: 100%;
+            margin-bottom: 1rem;
+
+            .container {
+                margin: 1rem;
+                padding: 10px;
+                border: 1px solid #e6e6e6;
+                border-radius: 3px;
+                transition: all 0.2s ease-in-out;
+
+                h4 {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+
+                    svg {
+                        transform: translateY(1px);
+                    }
+                }
+
+                .desc {
+                    border: 1px solid #e6e6e6;
+                    outline: none;
+                    width: 90%;
+                    margin-top: 0.5rem;
+                    padding: 0.5rem;
+                    border-radius: 3px;
+
+                    &:focus {
+                        border: 1px solid #ff5c35;
+                    }
+                }
+
+                p {
+                    margin: 0.4rem 0;
+                    font-size: 0.9rem;
+                    color: rgb(111, 114, 117);
+                }
+
+                .category {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+
+                    .num_cat {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+
+                        input {
+                            border-radius: 3px;
+                            padding: 0.4rem;
+                            outline: none;
+                            border: 1px solid #e6e6e6;
+
+                            &:focus {
+                                border: 1px solid #ff5c35;
+                            }
+                        }
+
+                        .delete_btn {
+                            width: 7rem;
+                            padding: 0.4rem;
+                            border-radius: 3px;
+                            border: 1px solid #e6e6e6;
+                            cursor: pointer;
+                            background-color: rgb(255 0 0 / 10%);
+                            color: red;
+                        }
+                    }
+
+                    .add_btn {
+                        width: 10rem;
+                        padding: 0.4rem;
+                        margin-left: 1.65rem;
+                        outline: none;
+                        border: 1px solid #e6e6e6;
+                        border-radius: 3px;
+                        cursor: pointer;
+                        background-color: rgb(0 128 0/10%);
+                        color: green;
+                    }
+                }
+                .combine {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    .combine_second {
+                        .num_cat {
+                            display: flex;
+                            align-items: center;
+                            margin-bottom: 5px;
+                            input {
+                                border-radius: 3px;
+                                padding: 0.4rem;
+                                outline: none;
+                                border: 1px solid #e6e6e6;
+
+                                &:focus {
+                                    border: 1px solid #ff5c35;
+                                }
+                            }
+                        }
+
+                        .delete_btn {
+                            width: 7rem;
+                            padding: 0.4rem;
+                            border-radius: 3px;
+                            border: 1px solid #e6e6e6;
+                            cursor: pointer;
+                            margin-left: 10px;
+                            background-color: rgb(255 0 0 / 10%);
+                            color: red;
+                        }
+                        .add_btn {
+                            width: 10rem;
+                            padding: 0.4rem;
+                            outline: none;
+                            border: 1px solid #e6e6e6;
+                            border-radius: 3px;
+                            cursor: pointer;
+                            background-color: rgb(0 128 0/10%);
+                            color: green;
+                        }
+                    }
+                }
+
+                .q2_p {
+                    margin: 0;
+                    margin-top: 0.4rem;
+                }
+
+                .options {
+                    margin-top: 0.5rem;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    span {
+                        font-weight: bold;
+                        font-size: 0.9rem;
+                        border-radius: 3px;
+                        padding: 0.4rem;
+                        outline: none;
+                        border: 1px solid #e6e6e6;
+                    }
+                    button {
+                        width: 7rem;
+                        padding: 0.4rem;
+                        border-radius: 3px;
+                        border: 1px solid #e6e6e6;
+                        cursor: pointer;
+                        background-color: rgb(255 0 0 / 10%);
+                        color: red;
+                    }
+                }
+
+                .passage {
+                    margin-top: 0.5rem;
+                    margin-right: 1rem;
+                    textarea {
+                        height: 10rem;
+                        width: 100%;
+                        padding: 10px;
+                        overflow-y: auto;
+                        border-radius: 3px;
+                        resize: none;
+                        outline: none;
+                        border: 1px solid #e6e6e6;
+
+                        &:focus {
+                            border: 1px solid #ff5c35;
+                        }
+                    }
+                }
+
+                .allquestion {
+                    padding: 10px;
+                    border: 1px solid #e6e6e6;
+                    border-radius: 3px;
+
+                    .question {
+                        .q_options {
+                            margin-top: 0.5rem;
+                            span {
+                                font-weight: bold;
+                                font-size: 0.9rem;
+                                border-radius: 3px;
+                                padding: 0.4rem;
+                                outline: none;
+                                border: 1px solid #e6e6e6;
+                            }
+                            button {
+                                width: 7rem;
+                                padding: 0.4rem;
+                                border-radius: 3px;
+                                border: 1px solid #e6e6e6;
+                                cursor: pointer;
+                                background-color: rgb(255 0 0 / 10%);
+                                color: red;
+                            }
+                            .head {
+                                display: flex;
+                                align-items: center;
+                                gap: 5px;
+
+                                h5 {
+                                    margin-left: 22px;
+                                }
+                            }
+                            .num_option {
+                                display: flex;
+                                align-items: center;
+                                gap: 10px;
+                                margin-bottom: 10px;
+
+                                .option {
+                                    border-radius: 3px;
+                                    padding: 0.4rem;
+                                    outline: none;
+                                    border: 1px solid #e6e6e6;
+
+                                    &:focus {
+                                        border: 1px solid #ff5c35;
+                                    }
+                                }
+                            }
+                        }
+
+                        .add_btn {
+                            width: 7rem;
+                            padding: 0.4rem;
+                            outline: none;
+                            border: 1px solid #e6e6e6;
+                            border-radius: 3px;
+                            cursor: pointer;
+                            background-color: rgb(0 128 0/10%);
+                            color: green;
+                        }
+                    }
+                }
+            }
+
+            .btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 1rem;
+
+                .active {
+                    width: 7rem;
+                    padding: 0.4rem;
+                    outline: none;
+                    border: 1px solid #e6e6e6;
+                    border-radius: 3px;
+                    cursor: pointer;
+                    background-color: navy;
+                    font-weight: bold;
+                    font-size: 1.1rem;
+                    color: white;
+                }
+                .load {
+                    width: 7rem;
+                    padding: 0.4rem;
+                    opacity: 0.7;
+                    pointer-events: none;
+                    cursor: not-allowed;
+                    user-select: none;
+                    outline: none;
+                    border: 1px solid #e6e6e6;
+                    border-radius: 3px;
+                    cursor: pointer;
+                    background-color: navy;
+                    font-weight: bold;
+                    font-size: 1.1rem;
+                    color: white;
+                }
+            }
+        }
+    }
+}
